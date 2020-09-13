@@ -1,0 +1,42 @@
+
+drop table users;
+
+create table users
+(
+	username varchar2(50),
+	password varchar2(50),
+	category varchar2(50),
+	email varchar2(50)
+);
+
+drop table quiz_info;
+create table quiz_info
+(
+	subject varchar2(20),
+	quiz_name varchar2(20)
+);
+
+drop table result;
+create table result
+(
+	username varchar2(50),
+	subject varchar2(20),
+	quiz_name varchar2(20),
+	total_marks number(4),
+	secured_marks number(4)
+);
+
+
+drop table quiz_name;
+create table quiz_name
+(
+	ques_no number(4),
+	question varchar2(200),	
+	option1 varchar2(200),
+	option2 varchar2(200)
+	option3 varchar2(200)
+	option4 varchar2(200)
+	answer number(4)
+);
+
+
